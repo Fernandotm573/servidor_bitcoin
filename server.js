@@ -13,8 +13,8 @@ app.use((req, res, next) => {
 //Se importa el enrutador
 const crypRouter = require('./routes/cryptoRoutes');
 
-//Se usa el enrutador para la ruta /cripto-api
-app.use('/cripto-api', crypRouter);
+//Se usa el enrutador para la ruta /crt-api
+app.use('/crt-api', crypRouter);
 
 app.listen(PORT, () => {
   console.log(`Servidor backend corriendo en http://localhost:${PORT}`);
